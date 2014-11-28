@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141127102721) do
+ActiveRecord::Schema.define(version: 20141128121009) do
 
   create_table "attributes", force: true do |t|
     t.string   "name"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20141127102721) do
     t.string   "icon"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "character_id"
   end
 
   create_table "characters", force: true do |t|
@@ -26,6 +27,7 @@ ActiveRecord::Schema.define(version: 20141127102721) do
     t.string   "picture"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
   end
 
   create_table "users", force: true do |t|
