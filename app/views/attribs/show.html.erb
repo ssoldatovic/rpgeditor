@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @attrib.name %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @attrib.value %>
+</p>
+
+<p>
+  <strong>Icon:</strong>
+  <%= @attrib.icon %>
+</p>
+
+<%= link_to 'Edit', edit_attrib_path(@attrib) %> |
+<%= link_to 'Back', attribs_path %>

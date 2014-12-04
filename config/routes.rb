@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
-  resources :attributes
+
+  resources :attribs
 
   devise_for :users
   get 'pages/index'
